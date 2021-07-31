@@ -1,0 +1,311 @@
+$Strong-Cyan: hsl(171, 66%, 44%);
+$Light-Blue: hsl(233, 100%, 69%);
+
+
+$Dark-Grayish-Blue: hsl(210, 10%, 33%);
+$Grayish-Blue: hsl(201, 11%, 66%);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    scroll-behavior: smooth;
+    p{
+        font-weight: 400;
+    }
+}
+body{
+    main{
+        padding: 1.3rem;
+        .first-section{
+            text-align: center;
+            padding-top: 5rem;
+            img{
+               margin-bottom: 3.5rem; 
+            }
+            h1{
+                font-size: 1.9rem;
+                color: $Dark-Grayish-Blue;
+                font-weight:600;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-size: 0.9rem;
+                line-height: 1.6rem;
+                color: $Grayish-Blue;
+                margin-bottom: 3rem;
+            }
+            .btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 1.3rem;
+                button{
+                    width: 100%;
+                    padding: 1rem;
+                    border-radius: 2rem;
+                    border: none;
+                    color: white;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    box-shadow: 2px 4px 6px 1px rgba(0,0,0,0.3);
+                    cursor: pointer;
+                    &:nth-of-type(1){
+                        background: $Strong-Cyan;
+                    }
+                    &:nth-of-type(2){
+                        background: $Light-Blue;
+                    }
+
+                }
+            }
+        }
+        .track{
+            text-align: center;
+            padding: 7rem 0 3rem 0;
+            h1{
+                font-size: 1.6rem;
+                color: $Dark-Grayish-Blue;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+            P{
+                color: $Grayish-Blue;
+                font-size: 0.9rem;
+                line-height: 1.6rem;
+            }
+        }
+        .third-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            img{
+                max-width: 100%;
+            }
+            .para-container{
+                padding-bottom: 5rem;
+            }
+            .para{
+                text-align: center;
+                margin: 3rem 0;
+                h1{
+                    font-size: 1.5rem;
+                    color: $Dark-Grayish-Blue;
+                    margin-bottom: 1rem;
+                }
+                p{
+                    font-size: 0.9rem;
+                    line-height: 1.6rem;
+                    color: $Grayish-Blue;
+                }
+            }
+        }
+        .fourth-section{
+            padding-bottom: 4rem;
+            text-align: center;
+            .upper{
+                h1{
+                    font-size: 1.7rem;
+                    color: $Dark-Grayish-Blue;
+                    margin-bottom: 1rem;
+                }
+                p{
+                    font-size: 0.9rem;
+                    color: $Grayish-Blue;
+                    line-height: 1.6rem;
+                }
+            }
+            .mid{
+                padding: 3rem 0 4rem 0;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+        .fifth-section{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 2rem;
+            .element{
+                padding-bottom: 2.5rem;
+                img{
+                    margin-bottom: 1rem;
+                }
+                h1{
+                font-size: 1.4rem;
+                color: $Dark-Grayish-Blue;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-size: 0.9rem;
+                color: $Grayish-Blue;
+                line-height: 1.6rem;
+            }
+        }
+
+    }
+    .sixth-section{
+        padding: 4rem 0 7rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+    .dup{
+        padding-top: 2rem;
+        padding-bottom: 7rem;
+            h1{
+                font-size: 1.7rem;
+            }
+            p{
+                font-size: 0.91rem;
+                line-height: 1.6rem;
+            }
+        
+    }
+}
+footer{
+    background: rgb(247, 242, 242);
+    .footer-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3rem 0;
+        text-align: center;
+        gap: 3rem;
+        .logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+            .logo{
+                img{
+                    height: 3rem;
+                }
+            }
+            .list{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 1.5rem;
+                a{
+                    text-decoration: none;
+                    color: $Dark-Grayish-Blue;
+                    font-weight: 600;
+                }
+            }
+        }
+        .socials{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            a{
+                text-decoration: none;
+                color: $Dark-Grayish-Blue;
+                font-size: 1.8rem;
+            }
+        }
+
+    }
+}
+}
+@media only screen and (min-width: 768px){
+    body{
+        main{
+            .first-section{
+                
+                p{
+                    padding:0 25rem;
+                }
+                .btn{
+                    flex-direction: row;
+                    button{
+                        width: 12rem;
+                    }
+                }
+            }
+            .track{
+                p{
+                    padding: 0 25rem;
+                }
+            }
+            .third-section{
+                flex-direction: row;
+                gap: 4rem;
+                padding-bottom: 7rem;
+                .para-container{
+                    .para{
+                        text-align: left;
+                        p{
+                            padding-right: 7rem;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+            .fourth-section{
+                .upper{
+                    p{
+                        padding: 0 25rem;
+                    }
+                }
+            }
+            .fifth-section{
+                align-items: baseline;
+                flex-direction: row;
+                flex-basis: 1;
+                margin-bottom: 2rem;
+                
+                .element{
+                    width: calc(100%/3);
+                    padding: 0;
+                    
+                    p{
+                        padding: 0 4rem;
+                    }
+                }
+            }
+            .sixth-section{
+                padding: 4rem 2rem 6rem;
+                flex-direction: row;
+                gap: 6rem;
+            }
+        }
+        footer{
+            
+            .footer-container{
+                padding: 1.5rem 0;
+                flex-direction: row;
+                justify-content: space-around;
+                .logo-container{
+                    flex-direction: row;
+                    gap: 4rem;
+                    .list{
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        max-width: 20rem;
+                        justify-content: flex-start;
+                        gap: 2rem;
+                        a{
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
